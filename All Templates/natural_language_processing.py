@@ -23,6 +23,11 @@ for i in range(0, 1000):
     review = [ps.stem(word) for word in review if not word in set(stopwords.words('english'))]
     review = ' '.join(review)
     corpus.append(review)
+    #1. import stopwords
+ #keep a-z and A-Z words
+# Convert it to lower case
+ #split into list
+#remove the word that's in stopwords
 
 # Creating the Bag of Words model
 from sklearn.feature_extraction.text import CountVectorizer
